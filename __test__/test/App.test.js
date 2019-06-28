@@ -5,7 +5,7 @@ import App from "../../src/containers/App.js";
 describe("App", () => {
   it("should have TodoStoreProvider", () => {
     const component = shallow(<App />);
-    expect(component.find("TodoStoreProvider"));
+    expect(component.find("TodoStoreProvider").exists()).toBe(true);
   });
 
   it("should render correctly with no props", () => {
